@@ -139,13 +139,21 @@ body {
 
 .acc a {
     background: url("../image/basketImg.png") no-repeat bottom;
-    width: 32px;
+    width: 38px;
     height: 38px;
     display: inline-block;
 }
 
 .acc a:hover {
-
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    background-size: 60%;
+    background-position: center;
+}
+.acc a:active {
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    background-size: 60
+    background-position: center;
+    background-color: #00f331;
 }
 
 .acc select {
@@ -695,6 +703,16 @@ font-size: 25px;
     letter-spacing: 0.4px;
     text-align: center;
     margin-left: 8px;
+}
+
+.copyright-social a:hover{
+    background-color: #b50000;
+    color: #ffffff;
+}
+.copyright-social a:active{
+    background-color: #b50000;
+    color: #ffffff;
+    font-size: 140%;
 }
 
 .copyright-text {

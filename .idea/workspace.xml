@@ -5,8 +5,8 @@
   </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/css/main.css" line="18" />
-    <bookmark url="file://$PROJECT_DIR$/css/main.css" line="178" />
-    <bookmark url="file://$PROJECT_DIR$/css/main.css" line="185" />
+    <bookmark url="file://$PROJECT_DIR$/css/main.css" line="186" />
+    <bookmark url="file://$PROJECT_DIR$/css/main.css" line="193" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eefd5097-f4f6-49c3-8385-bc9bc7f1049b" name="Default" comment="2334234" />
@@ -125,8 +125,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+                <state relative-caret-position="414">
+                  <caret line="275" column="6" lean-forward="false" selection-start-line="275" selection-start-column="6" selection-end-line="275" selection-end-column="6" />
                   <folding>
                     <element signature="e#1238#1466#0" expanded="false" />
                     <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -151,8 +151,8 @@
           <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="512">
-                  <caret line="189" column="26" lean-forward="false" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="26" />
+                <state relative-caret-position="516">
+                  <caret line="713" column="19" lean-forward="false" selection-start-line="713" selection-start-column="19" selection-end-line="713" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -324,7 +324,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59048000" />
+    <option name="totallyTimeSpent" value="60384000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -882,8 +882,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        <state relative-caret-position="414">
+          <caret line="275" column="6" lean-forward="false" selection-start-line="275" selection-start-column="6" selection-end-line="275" selection-end-column="6" />
           <folding>
             <element signature="e#1238#1466#0" expanded="false" />
             <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -902,8 +902,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="189" column="26" lean-forward="false" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="26" />
+        <state relative-caret-position="516">
+          <caret line="713" column="19" lean-forward="false" selection-start-line="713" selection-start-column="19" selection-end-line="713" selection-end-column="19" />
           <folding />
         </state>
       </provider>
