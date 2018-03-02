@@ -22,7 +22,7 @@ body {
 
 .header-label,
 .footer-logo {
-    background: url("../image/group-2.png") no-repeat;
+    /*background: url("../image/group-2.png") no-repeat;*/
     /*width: 150px;*/
     /*height: 51px;*/
     color: #222222;
@@ -33,6 +33,14 @@ body {
     font-weight: 300;
     letter-spacing: 0.68px;
     padding-left: 70px;
+}
+
+.header-label:before{
+    content: url("../image/group-2.png");
+    /*background: url("../image/group-2.png") no-repeat;*/
+    width: 55px;
+    height: 51px;
+    display: inline-block;
 }
 
 .header-label span,
