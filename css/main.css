@@ -33,18 +33,24 @@ body {
     font-weight: 300;
     letter-spacing: 0.68px;
     /*padding-left: 70px;*/
+    text-decoration: none;
 }
 
-.header-label:before,
-.footer-logo:before{
-    content: url("../image/group-2.png");
-    /*background: url("../image/group-2.png") no-repeat;*/
-    /*width: 55px;*/
-    /*height: 51px;*/
+.header-label img,
+.footer-logo img {
     position: relative;
     top: 10px;
-
 }
+
+/*.header-label:before,*/
+/*.footer-logo:before{*/
+/*content: url("../image/group-2.png");*/
+/*!*background: url("../image/group-2.png") no-repeat;*!*/
+/*!*width: 55px;*!*/
+/*!*height: 51px;*!*/
+/*position: relative;*/
+/*top: 10px;*/
+/*}*/
 
 .header-label span,
 .footer-logo span {
@@ -75,6 +81,22 @@ body {
     letter-spacing: 0.35px;
     padding-left: 10px;
     outline: none;
+}
+
+.header-search select:hover {
+    background-image: linear-gradient(to bottom, #d4c7c7 0%, #f5f5f5 100%);
+}
+
+.header-search select:active {
+    background-image: linear-gradient(to top, #d4c7c7 0%, #f5f5f5 100%);
+}
+
+.header-search button:hover {
+    background-size: 70%;
+}
+
+.header-search button:active {
+    background-size: 30%;
 }
 
 .header-search input {
@@ -122,6 +144,10 @@ body {
     display: inline-block;
 }
 
+.acc a:hover {
+
+}
+
 .acc select {
     width: 130px;
     height: 38px;
@@ -136,6 +162,14 @@ body {
     margin-left: 26px;
     border: none;
     outline: none;
+}
+
+.btn:hover {
+    background-color: #ad2739 !important;
+}
+
+.btn:active {
+    background-color: #f5013c !important;
 }
 
 .wrap-nav {
@@ -153,9 +187,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
 }
 
-.nav a {
+.nav li a {
     color: #222222;
     font-family: "Arial", sans-serif;
     font-size: 14px;
@@ -163,6 +198,14 @@ body {
     line-height: 26px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.nav li a:hover{
+font-size: 25px;
+}
+.nav li a:active{
+    font-size: 25px;
+    color: #e00e0e;
 }
 
 .slider {
@@ -438,7 +481,7 @@ body {
     position: relative;
 }
 
-.subscribe-shape{
+.subscribe-shape {
     position: absolute;
     top: 0;
     left: calc(50% - 0.5px);
