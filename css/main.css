@@ -32,15 +32,18 @@ body {
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 0.68px;
-    padding-left: 70px;
+    /*padding-left: 70px;*/
 }
 
-.header-label:before{
+.header-label:before,
+.footer-logo:before{
     content: url("../image/group-2.png");
     /*background: url("../image/group-2.png") no-repeat;*/
-    width: 55px;
-    height: 51px;
-    display: inline-block;
+    /*width: 55px;*/
+    /*height: 51px;*/
+    position: relative;
+    top: 10px;
+
 }
 
 .header-label span,
