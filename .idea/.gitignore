@@ -1,3 +1,6 @@
 /httpRequests/
 /inspectionProfiles/
 /workspace.xml
+*.xml
+*.gitignore
+/.gitignore
