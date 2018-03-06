@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Checkout</title>
+  <title>Single Page</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--<link href="packages/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">-->
   <link rel="stylesheet" href="packages/font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/breadcrumb.css">
+  <link rel="stylesheet" href="css/single-page.css">
 </head>
 <body>
 <header class="header">
@@ -33,7 +35,7 @@
   <ul class="nav">
     <li><a href="#">Home</a></li>
     <li><a href="#">Man</a></li>
-    <li><a href="#" class="nav-active-element">Women</a></li>
+    <li><a href="#">Women</a></li>
     <li><a href="#">Kids</a></li>
     <li><a href="#">Accoseriese</a></li>
     <li><a href="#">Featured</a></li>
@@ -49,58 +51,14 @@
   </div>
 </div>
 <main class="content">
-  <details open>
-    <summary>01. Shipping Adress</summary>
-    <div class="adress_wrap-form-content">
-      <form action="#" class="guest-register">
-        <h2 class="form-title">Check as a guest or register</h2>
-        <div class="form-subTitle">Register with us for future convenience</div>
-        <label for="checkout-guest">
-          <input id="checkout-guest" name="guest-register__select-input-option" type="radio">
-          <span></span>
-          checkout as guest
-        </label> <br>
-        <label for="checkout-register">
-          <input id="checkout-register" name="guest-register__select-input-option" type="radio" checked>
-          <span></span>
-          register
-        </label>
-        <h2 class="form-title">register and save time!</h2>
-        <div class="form-subTitle">Register with us for future convenience</div>
-        <div class="guest-register__infoBlock-bottom">
-          &raquo; Fast and easy checkout <br>
-          &raquo; Easy access to your order history and status
-        </div>
-        <button class="form-btn">Continue</button>
-      </form>
-      <form action="#" class="registed">
-        <h2 class="form-title">Already registed?</h2>
-        <div class="form-subTitle">Please log in below</div>
-        <label for="register__email">Email address<span>*</span></label>
-        <input type="email" id="register__email" required>
-        <label for="register__pass">Password<span>*</span></label>
-        <input type="password" id="register__pass" required>
-        <div class="registed__infoBlock-bottom">* Required Fileds</div>
-        <button type="submit" class="form-btn">Log in</button>
-        <a href="#" class="registed__forgot">Forgot Password ?</a>
-      </form>
+  <div class="image-slide">
+    <!--<img src="image/image-slide.png" alt="image-slide">-->
+  </div>
+  <div class="wrap-content">
+    <div class="product-description">
+
     </div>
-  </details>
-  <details>
-    <summary>02. Billing information</summary>
-  </details>
-  <details>
-    <summary>03. Shipping information</summary>
-  </details>
-  <details>
-    <summary>04. Shipping method</summary>
-  </details>
-  <details>
-    <summary>05. Payment method</summary>
-  </details>
-  <details>
-    <summary>06. Order review</summary>
-  </details>
+  </div>
 </main>
 <div class="subscribe">
   <div class="wrap-subscribe-content">
@@ -199,5 +157,8 @@
     </div>
   </div>
 </footer>
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!--<script src="packages/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
 </body>
 </html>
