@@ -1,0 +1,32 @@
+@import "main.css";
+@import "breadcrumb.css";
+
+.image-slide {
+    height: 777px;
+    border: 1px solid #eaeaea;
+    background: #f7f7f7 url("../image/image-slide.png") no-repeat center top;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+main.content{
+    width: 100%;
+    margin: 0 0 71px;
+}
+
+.wrap-content{
+    width: 1141px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.product-description{
+    background-color: #ffffff;
+    height: 730px;
+    border: 1px solid #eaeaea;
+    margin-top: -86px;
+    z-index: 20;
+    box-sizing: border-box;
+}
