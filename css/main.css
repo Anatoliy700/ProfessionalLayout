@@ -2,7 +2,8 @@ body {
     margin: 0;
 }
 
-.header {
+.header,
+ header{
     /*width: 1600px;*/
     /*margin: 0 auto;*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
@@ -22,7 +23,7 @@ body {
 
 .header-label,
 .footer-logo {
-    background: url("../image/group-2.png") no-repeat;
+    /*background: url("../image/group-2.png") no-repeat;*/
     /*width: 150px;*/
     /*height: 51px;*/
     color: #222222;
@@ -32,8 +33,25 @@ body {
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 0.68px;
-    padding-left: 70px;
+    /*padding-left: 70px;*/
+    text-decoration: none;
 }
+
+.header-label img,
+.footer-logo img {
+    position: relative;
+    top: 10px;
+}
+
+/*.header-label:before,*/
+/*.footer-logo:before{*/
+/*content: url("../image/group-2.png");*/
+/*!*background: url("../image/group-2.png") no-repeat;*!*/
+/*!*width: 55px;*!*/
+/*!*height: 51px;*!*/
+/*position: relative;*/
+/*top: 10px;*/
+/*}*/
 
 .header-label span,
 .footer-logo span {
@@ -64,6 +82,22 @@ body {
     letter-spacing: 0.35px;
     padding-left: 10px;
     outline: none;
+}
+
+.header-search select:hover {
+    background-image: linear-gradient(to bottom, #d4c7c7 0%, #f5f5f5 100%);
+}
+
+.header-search select:active {
+    background-image: linear-gradient(to top, #d4c7c7 0%, #f5f5f5 100%);
+}
+
+.header-search button:hover {
+    background-size: 70%;
+}
+
+.header-search button:active {
+    background-size: 30%;
 }
 
 .header-search input {
@@ -106,9 +140,21 @@ body {
 
 .acc a {
     background: url("../image/basketImg.png") no-repeat bottom;
-    width: 32px;
+    width: 38px;
     height: 38px;
     display: inline-block;
+}
+
+.acc a:hover {
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    background-size: 60%;
+    background-position: center;
+}
+.acc a:active {
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    background-size: 60%;
+    background-position: center;
+    background-color: #00f331;
 }
 
 .acc select {
@@ -127,6 +173,14 @@ body {
     outline: none;
 }
 
+.btn:hover {
+    background-color: #ad2739 !important;
+}
+
+.btn:active {
+    background-color: #f5013c !important;
+}
+
 .wrap-nav {
     width: 1600px;
     margin: 0 auto;
@@ -134,24 +188,35 @@ body {
     /*background-color: #ffff11;*/
 }
 
-.nav {
+.nav,
+ nav{
     width: 680px;
     min-height: 51px;
     margin: 0 auto;
     /*background-color: aqua;*/
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+    list-style-type: none;
 }
 
-.nav a {
+.nav li a {
     color: #222222;
     font-family: "Arial", sans-serif;
     font-size: 14px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 51px;
+    display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.nav li a:hover{
+font-size: 25px;
+}
+.nav li a:active{
+    font-size: 25px;
+    color: #e00e0e;
 }
 
 .slider {
@@ -210,7 +275,8 @@ body {
     color: #f16d7f;
 }
 
-.content {
+.content,
+    main{
     width: 1141px;
     margin: 98px auto;
 }
@@ -427,7 +493,7 @@ body {
     position: relative;
 }
 
-.subscribe-shape{
+.subscribe-shape {
     position: absolute;
     top: 0;
     left: calc(50% - 0.5px);
@@ -554,7 +620,8 @@ body {
     letter-spacing: 0.35px;
 }
 
-.footer {
+.footer,
+ footer{
     /*min-height: 428px;*/
 }
 
@@ -641,6 +708,16 @@ body {
     letter-spacing: 0.4px;
     text-align: center;
     margin-left: 8px;
+}
+
+.copyright-social a:hover{
+    background-color: #b50000;
+    color: #ffffff;
+}
+.copyright-social a:active{
+    background-color: #b50000;
+    color: #ffffff;
+    font-size: 140%;
 }
 
 .copyright-text {
