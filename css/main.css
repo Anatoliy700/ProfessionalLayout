@@ -37,21 +37,17 @@ body {
     text-decoration: none;
 }
 
+.header-label:hover,
+.header-label:focus{/*todo:переопределяем bootstrap*/
+ text-decoration: none;
+}
+
 .header-label img,
 .footer-logo img {
     position: relative;
     top: 10px;
+    vertical-align: baseline; /*todo:переопределяем bootstrap*/
 }
-
-/*.header-label:before,*/
-/*.footer-logo:before{*/
-/*content: url("../image/group-2.png");*/
-/*!*background: url("../image/group-2.png") no-repeat;*!*/
-/*!*width: 55px;*!*/
-/*!*height: 51px;*!*/
-/*position: relative;*/
-/*top: 10px;*/
-/*}*/
 
 .header-label span,
 .footer-logo span {
@@ -188,7 +184,7 @@ body {
     /*background-color: #ffff11;*/
 }
 
-.nav,
+.navig,
  nav{
     width: 680px;
     min-height: 51px;
@@ -200,7 +196,7 @@ body {
     list-style-type: none;
 }
 
-.nav li a {
+.navig li a {
     color: #222222;
     font-family: "Arial", sans-serif;
     font-size: 14px;
@@ -209,12 +205,15 @@ body {
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 0; /*TODO переопределяем bootstrap*/
 }
 
-.nav li a:hover{
-font-size: 25px;
+
+.navig li a:hover{
+    font-size: 25px;
+    background-color: transparent;
 }
-.nav li a:active{
+.navig li a:active{
     font-size: 25px;
     color: #e00e0e;
 }
