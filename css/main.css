@@ -184,7 +184,7 @@ body {
     /*background-color: #ffff11;*/
 }
 
-.navig,
+.nav,
  nav{
     width: 680px;
     min-height: 51px;
@@ -196,7 +196,7 @@ body {
     list-style-type: none;
 }
 
-.navig li a {
+.nav li a {
     color: #222222;
     font-family: "Arial", sans-serif;
     font-size: 14px;
@@ -209,11 +209,11 @@ body {
 }
 
 
-.navig li a:hover{
+.nav li a:hover{
     font-size: 25px;
     background-color: transparent;
 }
-.navig li a:active{
+.nav li a:active{
     font-size: 25px;
     color: #e00e0e;
 }
