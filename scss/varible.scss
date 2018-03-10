@@ -1,0 +1,9 @@
+$fontFamily: "Arial", sans-serif;
+$widthBase: 1141px;
+@mixin shopping-cart-style-text(){
+  color: #656565;
+  font-family: $fontFamily;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
