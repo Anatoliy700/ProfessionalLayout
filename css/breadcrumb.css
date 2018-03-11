@@ -7,6 +7,9 @@
 
 .breadcrumb {
     background-color: #f8f3f4;
+    padding: 0; /*todo:переопределяем bootstrap*/
+    margin-bottom: 0; /*todo:переопределяем bootstrap*/
+    border-radius: 0; /*todo:переопределяем bootstrap*/
 }
 
 .breadcrumb_wrap-content {
