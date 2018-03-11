@@ -728,7 +728,7 @@ details summary::-webkit-details-marker {
 .adress_wrap-form-content form {
   width: 50%; }
 
-label {
+.guest-register > label {
   color: #222222;
   font-family: "Arial", sans-serif;
   font-size: 12px;
@@ -1172,6 +1172,7 @@ main.content {
   outline: none; }
 
 .shopping-cart__action > button {
+  position: relative;
   width: 25px;
   height: 25px;
   color: #fff;
@@ -1183,9 +1184,255 @@ main.content {
   padding: 0;
   border: transparent;
   outline: none; }
+  .shopping-cart__action > button i {
+    position: absolute;
+    top: 5px;
+    left: 6px; }
   .shopping-cart__action > button:hover {
     background-color: #fff;
     color: #ddd; }
   .shopping-cart__action > button:active {
     color: #f00;
     background-color: #ddd; }
+
+.shopping-cart-btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 44px 0 63px; }
+  .shopping-cart-btn__clear {
+    width: 235px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    outline: none !important; }
+    .shopping-cart-btn__clear:hover {
+      background-color: #f16d7f;
+      color: #fff; }
+    .shopping-cart-btn__clear:active {
+      box-shadow: 0 0 14px 2px #7421caf7;
+      border-color: #f16d7f; }
+  .shopping-cart-btn__continue {
+    width: 225px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    outline: none !important; }
+    .shopping-cart-btn__continue:hover {
+      background-color: #f16d7f;
+      color: #fff; }
+    .shopping-cart-btn__continue:active {
+      box-shadow: 0 0 14px 2px #7421caf7;
+      border-color: #f16d7f; }
+
+.wrap-shipping {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 79px; }
+
+.shipping-address__header {
+  color: #222222;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 22px; }
+.shipping-address > select, .shipping-address__state, .shipping-address__zip {
+  width: 355px !important;
+  height: 45px !important;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #b1b1b1;
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 20px; }
+  .shipping-address > select::-webkit-input-placeholder, .shipping-address__state::-webkit-input-placeholder, .shipping-address__zip::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease; }
+  .shipping-address > select::-moz-placeholder, .shipping-address__state::-moz-placeholder, .shipping-address__zip::-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease; }
+  .shipping-address > select:-moz-placeholder, .shipping-address__state:-moz-placeholder, .shipping-address__zip:-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease; }
+  .shipping-address > select:-ms-input-placeholder, .shipping-address__state:-ms-input-placeholder, .shipping-address__zip:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease; }
+  .shipping-address > select:focus::-webkit-input-placeholder, .shipping-address__state:focus::-webkit-input-placeholder, .shipping-address__zip:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease; }
+  .shipping-address > select:focus::-moz-placeholder, .shipping-address__state:focus::-moz-placeholder, .shipping-address__zip:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease; }
+  .shipping-address > select:focus:-moz-placeholder, .shipping-address__state:focus:-moz-placeholder, .shipping-address__zip:focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease; }
+  .shipping-address > select::-webkit-input-placeholder, .shipping-address__state::-webkit-input-placeholder, .shipping-address__zip::-webkit-input-placeholder {
+    color: #b1b1b1; }
+  .shipping-address > select::-moz-placeholder, .shipping-address__state::-moz-placeholder, .shipping-address__zip::-moz-placeholder {
+    color: #b1b1b1; }
+  .shipping-address > select:-moz-placeholder, .shipping-address__state:-moz-placeholder, .shipping-address__zip:-moz-placeholder {
+    color: #b1b1b1; }
+  .shipping-address > select:-ms-input-placeholder, .shipping-address__state:-ms-input-placeholder, .shipping-address__zip:-ms-input-placeholder {
+    color: #b1b1b1; }
+.shipping-address__getAQuote {
+  width: 100px;
+  height: 35px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #4a4a4a;
+  font-family: "Arial", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  outline: none !important; }
+  .shipping-address__getAQuote:hover {
+    background-color: #f16d7f;
+    color: #fff; }
+  .shipping-address__getAQuote:active {
+    box-shadow: 0 0 14px 2px #7421caf7;
+    border-color: #f16d7f; }
+
+.shipping-discount label {
+  color: #000000;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 24px; }
+.shipping-discount__header {
+  color: #222222;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 22px; }
+.shipping-discount__coupon {
+  width: 355px !important;
+  height: 45px !important;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #b1b1b1;
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 20px; }
+  .shipping-discount__coupon::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease; }
+  .shipping-discount__coupon::-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease; }
+  .shipping-discount__coupon:-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease; }
+  .shipping-discount__coupon:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease; }
+  .shipping-discount__coupon:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease; }
+  .shipping-discount__coupon:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease; }
+  .shipping-discount__coupon:focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease; }
+  .shipping-discount__coupon::-webkit-input-placeholder {
+    color: #b1b1b1; }
+  .shipping-discount__coupon::-moz-placeholder {
+    color: #b1b1b1; }
+  .shipping-discount__coupon:-moz-placeholder {
+    color: #b1b1b1; }
+  .shipping-discount__coupon:-ms-input-placeholder {
+    color: #b1b1b1; }
+.shipping-discount__applyCoupon {
+  width: 118px;
+  height: 35px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #4a4a4a;
+  font-family: "Arial", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  outline: none !important; }
+  .shipping-discount__applyCoupon:hover {
+    background-color: #f16d7f;
+    color: #fff; }
+  .shipping-discount__applyCoupon:active {
+    box-shadow: 0 0 14px 2px #7421caf7;
+    border-color: #f16d7f; }
+
+.sub-total-label,
+.sub-total-value {
+  color: #4a4a4a;
+  font-family: "Arial", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.shipping-check {
+  width: 360px;
+  height: 214px;
+  background-color: #f5f3f3;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+
+.shipping-check__total {
+  width: 273px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 17px; }
+
+.shipping-check__sub-total {
+  text-align: right;
+  color: #4a4a4a;
+  font-family: "Arial", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 14px; }
+
+.shipping-check__grand-total {
+  text-align: right;
+  color: #222222;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 22px; }
+  .shipping-check__grand-total .grand-total-value {
+    color: #f16d7f; }
+
+.shipping-check__btn {
+  width: 273px;
+  height: 50px;
+  background-color: #f16d7f;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  outline: none !important; }
+  .shipping-check__btn:hover {
+    background-color: #e21632; }
+  .shipping-check__btn:active {
+    box-shadow: 0 0 14px 2px #7421caf7;
+    border-color: #f16d7f; }
