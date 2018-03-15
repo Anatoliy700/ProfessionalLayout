@@ -52,11 +52,11 @@ main.content {
   margin: 61px auto;
 }
 
-details {
+.wrap-content>details {
   border-bottom: #e8e8e8 solid 1px;
 }
 
-details summary {
+.wrap-content>details>summary {
   color: #222222;
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -68,7 +68,7 @@ details summary {
   overflow: hidden;
 }
 
-details summary::-webkit-details-marker {
+.wrap-content>details>summary::-webkit-details-marker {
   display: none;
 }
 
