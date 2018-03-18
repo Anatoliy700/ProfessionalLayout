@@ -24,7 +24,38 @@
       <button></button>
     </div>
     <div class="acc">
-      <a href="#"></a>
+      <div class="acc__cart_wrap">
+        <a href="#"></a>
+        <div class="acc__cart">
+          <div class="acc__cart__products-wrap">
+            <div class="acc__cart__product">
+              <div class="acc__cart__product__img">
+                <img src="image/cart-product-1.jpg" alt="Rebox Zane">
+              </div>
+              <div class="acc__cart__product__data">
+                <span class="product__data_head">Rebox Zane</span>
+                <span class="product__data_quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star quality-white" aria-hidden="true"></i>
+                </span>
+                <div class="product__data_calculation">
+                  <span class="product__data_number">1</span> x <span class="product__data_price">$250</span>
+                </div>
+              </div>
+              <div class="acc__cart__product__del">
+                <button>
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="acc__cart__price-total"></div>
+          <div class="acc__cart__buttons"></div>
+        </div>
+      </div>
       <select title="MyAccount" class="btn" name="account" id="account">
         <option value="MyAccount">MyAccount</option>
       </select>
@@ -106,13 +137,15 @@
             <div class="top-filter__size col-sm-4">
               <div class="top-filter__size__head">Size</div>
               <div class="top-filter__size__items">
-                <label for="xxs"><input id="xxs" type="checkbox"><i class="fa fa-check" aria-hidden="true"></i>XXS</label>
+                <label for="xxs"><input id="xxs" type="checkbox"><i class="fa fa-check"
+                                                                    aria-hidden="true"></i>XXS</label>
                 <label for="xs"><input id="xs" type="checkbox"><i class="fa fa-check" aria-hidden="true"></i>XS</label>
                 <label for="s"><input id="s" type="checkbox"><i class="fa fa-check" aria-hidden="true"></i>S</label>
                 <label for="m"><input id="m" type="checkbox"><i class="fa fa-check" aria-hidden="true"></i>M</label>
                 <label for="l"><input id="l" type="checkbox"><i class="fa fa-check" aria-hidden="true"></i>L</label>
                 <label for="xl"><input id="xl" type="checkbox"><i class="fa fa-check" aria-hidden="true"></i>XL</label>
-                <label for="xxl"><input id="xxl" type="checkbox"><i class="fa fa-check" aria-hidden="true"></i>XXL</label>
+                <label for="xxl"><input id="xxl" type="checkbox"><i class="fa fa-check"
+                                                                    aria-hidden="true"></i>XXL</label>
               </div>
             </div>
             <div class="top-filter__price col-sm-4">
@@ -145,6 +178,13 @@
             <div class="products__product-item">
               <div class="products__wrap-product-item-img">
                 <img src="image/product-men-1.jpg" alt="Blaze leggings">
+                <div class="products__product-item__hover">
+                  <div class="products__product-item__hover-btn">
+                    <button class="products__product-item__hover-btn-add">Add to Cart</button>
+                    <button class="products__product-item__hover-btn-refresh">&nbsp;</button>
+                    <button class="products__product-item__hover-btn-like">&nbsp;</button>
+                  </div>
+                </div>
               </div>
               <p>Mango People T-shirt<span class="products__product-item__price">$52.00</span></p>
             </div>
@@ -153,6 +193,13 @@
             <div class="products__product-item">
               <div class="products__wrap-product-item-img">
                 <img src="image/product-men-2.jpg" alt="Blaze leggings">
+                <div class="products__product-item__hover">
+                  <div class="products__product-item__hover-btn">
+                    <button class="products__product-item__hover-btn-add">Add to Cart</button>
+                    <button class="products__product-item__hover-btn-refresh">&nbsp;</button>
+                    <button class="products__product-item__hover-btn-like">&nbsp;</button>
+                  </div>
+                </div>
               </div>
               <p>Mango People T-shirt<span class="products__product-item__price">$52.00</span></p>
             </div>
@@ -161,6 +208,13 @@
             <div class="products__product-item">
               <div class="products__wrap-product-item-img">
                 <img src="image/product-men-3.jpg" alt="Blaze leggings">
+                <div class="products__product-item__hover">
+                  <div class="products__product-item__hover-btn">
+                    <button class="products__product-item__hover-btn-add">Add to Cart</button>
+                    <button class="products__product-item__hover-btn-refresh">&nbsp;</button>
+                    <button class="products__product-item__hover-btn-like">&nbsp;</button>
+                  </div>
+                </div>
               </div>
               <p>Mango People T-shirt<span class="products__product-item__price">$52.00</span></p>
             </div>
@@ -169,6 +223,13 @@
             <div class="products__product-item">
               <div class="products__wrap-product-item-img">
                 <img src="image/product-men-4.jpg" alt="Blaze leggings">
+                <div class="products__product-item__hover">
+                  <div class="products__product-item__hover-btn">
+                    <button class="products__product-item__hover-btn-add">Add to Cart</button>
+                    <button class="products__product-item__hover-btn-refresh">&nbsp;</button>
+                    <button class="products__product-item__hover-btn-like">&nbsp;</button>
+                  </div>
+                </div>
               </div>
               <p>Mango People T-shirt<span class="products__product-item__price">$52.00</span></p>
             </div>
@@ -177,6 +238,13 @@
             <div class="products__product-item">
               <div class="products__wrap-product-item-img">
                 <img src="image/product-men-5.jpg" alt="Blaze leggings">
+                <div class="products__product-item__hover">
+                  <div class="products__product-item__hover-btn">
+                    <button class="products__product-item__hover-btn-add">Add to Cart</button>
+                    <button class="products__product-item__hover-btn-refresh">&nbsp;</button>
+                    <button class="products__product-item__hover-btn-like">&nbsp;</button>
+                  </div>
+                </div>
               </div>
               <p>Mango People T-shirt<span class="products__product-item__price">$52.00</span></p>
             </div>
@@ -185,6 +253,13 @@
             <div class="products__product-item">
               <div class="products__wrap-product-item-img">
                 <img src="image/product-men-6.jpg" alt="Blaze leggings">
+                <div class="products__product-item__hover">
+                  <div class="products__product-item__hover-btn">
+                    <button class="products__product-item__hover-btn-add">Add to Cart</button>
+                    <button class="products__product-item__hover-btn-refresh">&nbsp;</button>
+                    <button class="products__product-item__hover-btn-like">&nbsp;</button>
+                  </div>
+                </div>
               </div>
               <p>Mango People T-shirt<span class="products__product-item__price">$52.00</span></p>
             </div>
@@ -193,6 +268,13 @@
             <div class="products__product-item">
               <div class="products__wrap-product-item-img">
                 <img src="image/product-men-7.jpg" alt="Blaze leggings">
+                <div class="products__product-item__hover">
+                  <div class="products__product-item__hover-btn">
+                    <button class="products__product-item__hover-btn-add">Add to Cart</button>
+                    <button class="products__product-item__hover-btn-refresh">&nbsp;</button>
+                    <button class="products__product-item__hover-btn-like">&nbsp;</button>
+                  </div>
+                </div>
               </div>
               <p>Mango People T-shirt<span class="products__product-item__price">$52.00</span></p>
             </div>
@@ -201,6 +283,13 @@
             <div class="products__product-item">
               <div class="products__wrap-product-item-img">
                 <img src="image/product-men-8.jpg" alt="Blaze leggings">
+                <div class="products__product-item__hover">
+                  <div class="products__product-item__hover-btn">
+                    <button class="products__product-item__hover-btn-add">Add to Cart</button>
+                    <button class="products__product-item__hover-btn-refresh">&nbsp;</button>
+                    <button class="products__product-item__hover-btn-like">&nbsp;</button>
+                  </div>
+                </div>
               </div>
               <p>Mango People T-shirt<span class="products__product-item__price">$52.00</span></p>
             </div>
@@ -209,6 +298,13 @@
             <div class="products__product-item">
               <div class="products__wrap-product-item-img">
                 <img src="image/product-men-9.jpg" alt="Blaze leggings">
+                <div class="products__product-item__hover">
+                  <div class="products__product-item__hover-btn">
+                    <button class="products__product-item__hover-btn-add">Add to Cart</button>
+                    <button class="products__product-item__hover-btn-refresh">&nbsp;</button>
+                    <button class="products__product-item__hover-btn-like">&nbsp;</button>
+                  </div>
+                </div>
               </div>
               <p>Mango People T-shirt<span class="products__product-item__price">$52.00</span></p>
             </div>
@@ -235,15 +331,18 @@
     <div class="row">
       <div class="products__feature-box__free">
         <p class="products__feature-box__title">Free Delivery</p>
-        <p class="products__feature-box__content">Worldwide delivery on all. Authorit tively morph <br>next-generation innov tion with extensive models.</p>
+        <p class="products__feature-box__content">Worldwide delivery on all. Authorit tively morph <br>next-generation
+          innov tion with extensive models.</p>
       </div>
       <div class="products__feature-box__sales">
         <p class="products__feature-box__title">Sales & discounts</p>
-        <p class="products__feature-box__content">Worldwide delivery on all. Authorit tively morph <br>next-generation innov tion with extensive models.</p>
+        <p class="products__feature-box__content">Worldwide delivery on all. Authorit tively morph <br>next-generation
+          innov tion with extensive models.</p>
       </div>
       <div class="products__feature-box__quality">
         <p class="products__feature-box__title">Quality assurance</p>
-        <p class="products__feature-box__content">Worldwide delivery on all. Authorit tively morph <br>next-generation innov tion with extensive models.</p>
+        <p class="products__feature-box__content">Worldwide delivery on all. Authorit tively morph <br>next-generation
+          innov tion with extensive models.</p>
       </div>
     </div>
   </div>

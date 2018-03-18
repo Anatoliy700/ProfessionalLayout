@@ -239,18 +239,80 @@
     }
     transition: transform 0.3s linear;
     &:hover {
-      box-shadow: 0px 3px 17px 6px rgba(0, 0, 0, 0.16);
+      box-shadow: 0 3px 17px 6px rgba(0, 0, 0, 0.16);
       transform: scale(1.1);
       z-index: 2;
-      & p {
-        transform: rotate(360deg);
+      //& p {
+      //  transform: rotate(360deg);
+      //}
+      & .products__product-item__hover {
+        display: flex;
+        //filter: brightness(.3);
       }
-      & > .products__wrap-product-item-img {
-        filter: brightness(.3);
+    }
+    &__hover{
+      //display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      position: absolute;
+      background-color: rgba(58, 56, 56, 0.5);
+      //opacity: .5;
+      width: 100%;
+      height: 100%;
+      &-btn{
+        width: 126px;
+        &-add{
+          width: 126px;
+          height: 42px;
+          background: url("../image/hover-addToCart.png") 12px center  no-repeat;
+          border-radius: 3px;
+          border: 1px solid #ffffff;
+          //background-color: inherit;
+          outline: none !important;
+          color: #ffffff;
+          font-family: $fontFamily;
+          font-size: 13px;
+          font-weight: 700;
+          box-sizing: border-box;
+          margin-bottom: 5px;
+          cursor: pointer;
+          padding-left: 38px;
+          &:hover{
+            //color: $bgColorBase;
+            background: url("../image/hover-addToCart.png") 12px center  no-repeat, $bgColorBase;
+
+          }
+          &:active{
+            box-shadow: 0 0 14px 2px #7421caf7;
+            border-color: #f16d7f;
+          }
+        }
+        &-refresh{
+          @extend .products__product-item__hover-btn-add;
+          width: 60px;
+          height: 41px;
+          background: url("../image/hover-refresh.png") center no-repeat;
+          &:hover{
+            //color: $bgColorBase;
+            background: url("../image/hover-refresh.png") center  no-repeat, $bgColorBase;
+
+          }
+        }
+        &-like{
+          @extend .products__product-item__hover-btn-refresh;
+          background: url("../image/hover-like.png") center no-repeat;
+          &:hover{
+            //color: $bgColorBase;
+            background: url("../image/hover-like.png") center  no-repeat, $bgColorBase;
+
+          }
+        }
       }
     }
   }
   &__wrap-product-item-img {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;

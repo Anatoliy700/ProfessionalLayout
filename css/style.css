@@ -146,6 +146,104 @@ header {
   justify-content: flex-end;
   align-items: center;
   flex-grow: 1; }
+  .acc__cart_wrap {
+    position: relative; }
+  .acc__cart {
+    position: absolute;
+    width: 265px;
+    height: 443px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    left: -15px;
+    top: 50px;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9e9e9;
+    padding: 20px; }
+    .acc__cart:before {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 18px;
+      background-color: inherit;
+      transform: rotate(45deg);
+      border-left: 1px solid #e9e9e9;
+      border-top: 1px solid #e9e9e9;
+      position: absolute;
+      left: 25px;
+      top: -10px; }
+    .acc__cart__product {
+      display: flex;
+      justify-content: flex-start;
+      border-bottom: 1px solid #ededed;
+      padding: 0 0 13px;
+      margin-bottom: 13px; }
+      .acc__cart__product__data {
+        margin-left: 13px;
+        padding-top: 5px; }
+        .acc__cart__product__data > span {
+          display: block;
+          margin-bottom: 5px; }
+        .acc__cart__product__data > .product__data_head {
+          color: #222222;
+          font-family: "Arial", sans-serif;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase; }
+        .acc__cart__product__data > .product__data_quality {
+          color: #e4af48;
+          font-size: 12px;
+          font-weight: 400;
+          text-transform: uppercase; }
+          .acc__cart__product__data > .product__data_quality > .quality-white {
+            position: relative; }
+            .acc__cart__product__data > .product__data_quality > .quality-white:after {
+              content: "\f005";
+              display: block;
+              position: absolute;
+              color: white;
+              font-size: 9px;
+              top: 2px;
+              left: 6px;
+              width: 4px;
+              overflow: hidden;
+              transform: rotateY(180deg); }
+        .acc__cart__product__data > .product__data_calculation {
+          color: #f16d7f;
+          font-family: "Arial", sans-serif;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 10px; }
+          .acc__cart__product__data > .product__data_calculation > span {
+            font-size: 12px; }
+      .acc__cart__product__del {
+        align-self: center;
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end; }
+        .acc__cart__product__del > button {
+          display: flex;
+          width: 15px;
+          height: 15px;
+          color: #fff;
+          background-color: #ddd;
+          font-size: 10px;
+          font-weight: 400;
+          text-transform: uppercase;
+          border-radius: 50%;
+          padding: 0;
+          border: transparent;
+          outline: none;
+          cursor: pointer; }
+          .acc__cart__product__del > button:hover {
+            background-color: #f16d7f;
+            color: #fff; }
+          .acc__cart__product__del > button:active {
+            color: #f16d7f;
+            background-color: #ddd; }
+          .acc__cart__product__del > button > i {
+            margin: auto;
+            line-height: 1em; }
 
 .acc a {
   background: url("../image/basketImg.png") no-repeat bottom;
@@ -215,11 +313,10 @@ nav {
   /*TODO переопределяем bootstrap*/ }
 
 .nav li a:hover {
-  font-size: 25px;
-  background-color: transparent; }
+  background-color: transparent;
+  transform: scale(1.4); }
 
 .nav li a:active {
-  font-size: 25px;
   color: #e00e0e; }
 
 .subscribe {
@@ -1672,14 +1769,53 @@ main.content {
       text-transform: uppercase;
       margin-top: 17px; }
     .products__product-item:hover {
-      box-shadow: 0px 3px 17px 6px rgba(0, 0, 0, 0.16);
+      box-shadow: 0 3px 17px 6px rgba(0, 0, 0, 0.16);
       transform: scale(1.1);
       z-index: 2; }
-      .products__product-item:hover p {
-        transform: rotate(360deg); }
-      .products__product-item:hover > .products__wrap-product-item-img {
-        filter: brightness(0.3); }
+      .products__product-item:hover .products__product-item__hover {
+        display: flex; }
+    .products__product-item__hover {
+      justify-content: center;
+      align-items: center;
+      display: none;
+      position: absolute;
+      background-color: rgba(58, 56, 56, 0.5);
+      width: 100%;
+      height: 100%; }
+      .products__product-item__hover-btn {
+        width: 126px; }
+        .products__product-item__hover-btn-add, .products__product-item__hover-btn-refresh, .products__product-item__hover-btn-like {
+          width: 126px;
+          height: 42px;
+          background: url("../image/hover-addToCart.png") 12px center no-repeat;
+          border-radius: 3px;
+          border: 1px solid #ffffff;
+          outline: none !important;
+          color: #ffffff;
+          font-family: "Arial", sans-serif;
+          font-size: 13px;
+          font-weight: 700;
+          box-sizing: border-box;
+          margin-bottom: 5px;
+          cursor: pointer;
+          padding-left: 38px; }
+          .products__product-item__hover-btn-add:hover, .products__product-item__hover-btn-refresh:hover, .products__product-item__hover-btn-like:hover {
+            background: url("../image/hover-addToCart.png") 12px center no-repeat, #f16d7f; }
+          .products__product-item__hover-btn-add:active, .products__product-item__hover-btn-refresh:active, .products__product-item__hover-btn-like:active {
+            box-shadow: 0 0 14px 2px #7421caf7;
+            border-color: #f16d7f; }
+        .products__product-item__hover-btn-refresh, .products__product-item__hover-btn-like {
+          width: 60px;
+          height: 41px;
+          background: url("../image/hover-refresh.png") center no-repeat; }
+          .products__product-item__hover-btn-refresh:hover, .products__product-item__hover-btn-like:hover {
+            background: url("../image/hover-refresh.png") center no-repeat, #f16d7f; }
+        .products__product-item__hover-btn-like {
+          background: url("../image/hover-like.png") center no-repeat; }
+          .products__product-item__hover-btn-like:hover {
+            background: url("../image/hover-like.png") center no-repeat, #f16d7f; }
   .products__wrap-product-item-img {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
