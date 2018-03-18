@@ -22,6 +22,7 @@ $widthBase: 1141px;
   text-transform: uppercase;
   box-sizing: border-box;
   outline: none !important;
+  cursor: pointer;
   &:hover {
     background-color: $bgColorBase;
     color: #fff;
