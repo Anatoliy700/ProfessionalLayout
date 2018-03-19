@@ -1,6 +1,12 @@
 $fontFamily: "Arial", sans-serif;
 $bgColorBase: #f16d7f;
 $widthBase: 1141px;
+
+@mixin btn-active() {
+  box-shadow: 0 0 14px 2px rgba(116, 33, 202, 0.97);
+  border-color: $bgColorBase;
+}
+
 @mixin shopping-cart-style-text() {
   color: #656565;
   font-family: $fontFamily;
@@ -28,8 +34,7 @@ $widthBase: 1141px;
     color: #fff;
   }
   &:active {
-    box-shadow: 0 0 14px 2px #7421caf7;
-    border-color: #f16d7f;
+    @include btn-active;
   }
 }
 
@@ -94,18 +99,7 @@ $widthBase: 1141px;
   margin-bottom: 22px;
 }
 
-@keyframes toCar {
-  0% {
-    top: 0;
-    left: 0;
-  }
-  100% {
-    top: 100px;
-    left: 100px;
-  }
-}
-
-@mixin slider-barRangePointer($top, $left){
+@mixin slider-barRangePointer($top, $left) {
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -117,10 +111,11 @@ $widthBase: 1141px;
   cursor: ew-resize;
 }
 
-.description{
-  position: absolute;
-  display: flex;
-  margin: 50px;
-  background: #fff url(5) 4px 6px revert;
-  content: '';
-}
+//.description{
+//  position: absolute;
+//  display: flex;
+//  margin: 50px;
+//  background: #fff url(5) 4px 6px revert;
+//  content: '';
+//}
+

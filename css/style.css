@@ -1,32 +1,4 @@
 @charset "UTF-8";
-@keyframes toCar {
-  0% {
-    top: 0;
-    left: 0; }
-  100% {
-    top: 100px;
-    left: 100px; } }
-.description {
-  position: absolute;
-  display: flex;
-  margin: 50px;
-  background: #fff url(5) 4px 6px revert;
-  content: ''; }
-
-@keyframes toCar {
-  0% {
-    top: 0;
-    left: 0; }
-  100% {
-    top: 100px;
-    left: 100px; } }
-.description {
-  position: absolute;
-  display: flex;
-  margin: 50px;
-  background: #fff url(5) 4px 6px revert;
-  content: ''; }
-
 body {
   margin: 0; }
 
@@ -65,7 +37,8 @@ header {
 .header-label:hover,
 .header-label:focus {
   /*todo:переопределяем bootstrap*/
-  text-decoration: none; }
+  text-decoration: none;
+  color: #222222; }
 
 .header-label img,
 .footer-logo img {
@@ -154,7 +127,6 @@ header {
     display: none;
     position: absolute;
     width: 265px;
-    height: 443px;
     border-radius: 5px;
     background-color: #ffffff;
     left: -15px;
@@ -282,7 +254,7 @@ header {
         background-color: #f16d7f;
         color: #fff; }
       .acc__cart__buttons .buttons_checkout:active {
-        box-shadow: 0 0 14px 2px #7421caf7;
+        box-shadow: 0 0 14px 2px rgba(116, 33, 202, 0.97);
         border-color: #f16d7f; }
     .acc__cart__buttons .buttons_go-to-cart {
       width: 227px;
@@ -301,7 +273,7 @@ header {
         background-color: #f16d7f;
         color: #fff; }
       .acc__cart__buttons .buttons_go-to-cart:active {
-        box-shadow: 0 0 14px 2px #7421caf7;
+        box-shadow: 0 0 14px 2px rgba(116, 33, 202, 0.97);
         border-color: #f16d7f; }
   .acc a {
     background: url("../image/basketImg.png") no-repeat bottom;
@@ -929,7 +901,7 @@ main.content {
   border: 2px solid #c13a61; }
 
 .form-btn:active {
-  background-color: #f10a0a30; }
+  background-color: rgba(241, 10, 10, 0.19); }
 
 .form-btn:focus {
   outline: none; }
@@ -1389,7 +1361,7 @@ main.content {
       background-color: #f16d7f;
       color: #fff; }
     .shopping-cart-btn__clear:active {
-      box-shadow: 0 0 14px 2px #7421caf7;
+      box-shadow: 0 0 14px 2px rgba(116, 33, 202, 0.97);
       border-color: #f16d7f; }
   .shopping-cart-btn__continue {
     width: 225px;
@@ -1408,7 +1380,7 @@ main.content {
       background-color: #f16d7f;
       color: #fff; }
     .shopping-cart-btn__continue:active {
-      box-shadow: 0 0 14px 2px #7421caf7;
+      box-shadow: 0 0 14px 2px rgba(116, 33, 202, 0.97);
       border-color: #f16d7f; }
 
 .wrap-shipping {
@@ -1479,7 +1451,7 @@ main.content {
     background-color: #f16d7f;
     color: #fff; }
   .shipping-address__getAQuote:active {
-    box-shadow: 0 0 14px 2px #7421caf7;
+    box-shadow: 0 0 14px 2px rgba(116, 33, 202, 0.97);
     border-color: #f16d7f; }
 
 .shipping-discount label {
@@ -1551,7 +1523,7 @@ main.content {
     background-color: #f16d7f;
     color: #fff; }
   .shipping-discount__applyCoupon:active {
-    box-shadow: 0 0 14px 2px #7421caf7;
+    box-shadow: 0 0 14px 2px rgba(116, 33, 202, 0.97);
     border-color: #f16d7f; }
 
 .sub-total-label,
@@ -1611,7 +1583,7 @@ main.content {
   .shipping-check__btn:hover {
     background-color: #e21632; }
   .shipping-check__btn:active {
-    box-shadow: 0 0 14px 2px #7421caf7;
+    box-shadow: 0 0 14px 2px rgba(116, 33, 202, 0.97);
     border-color: #f16d7f; }
 
 .product-page {
@@ -1852,7 +1824,7 @@ main.content {
           .products__product-item__hover-btn-add:hover, .products__product-item__hover-btn-refresh:hover, .products__product-item__hover-btn-like:hover {
             background: url("../image/hover-addToCart.png") 12px center no-repeat, #f16d7f; }
           .products__product-item__hover-btn-add:active, .products__product-item__hover-btn-refresh:active, .products__product-item__hover-btn-like:active {
-            box-shadow: 0 0 14px 2px #7421caf7;
+            box-shadow: 0 0 14px 2px rgba(116, 33, 202, 0.97);
             border-color: #f16d7f; }
         .products__product-item__hover-btn-refresh, .products__product-item__hover-btn-like {
           width: 60px;
@@ -1919,7 +1891,7 @@ main.content {
       color: #ffffff;
       background-color: #ef5b70; }
     .pagination__view-all:active {
-      box-shadow: 0 0 14px 2px #7421caf7;
+      box-shadow: 0 0 14px 2px rgba(116, 33, 202, 0.97);
       border-color: #f16d7f; }
 
 .products__feature-box {

@@ -284,7 +284,7 @@
 
           }
           &:active{
-            box-shadow: 0 0 14px 2px #7421caf7;
+            box-shadow: 0 0 14px 2px rgba(116, 33, 202, 0.97);
             border-color: #f16d7f;
           }
         }
@@ -377,7 +377,7 @@
       background-color: #ef5b70;
     }
     &:active {
-      box-shadow: 0 0 14px 2px #7421caf7;
+      box-shadow: 0 0 14px 2px rgba(116, 33, 202, 0.97);
       border-color: #f16d7f;
     }
   }

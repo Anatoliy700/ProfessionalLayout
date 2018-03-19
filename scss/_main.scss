@@ -42,6 +42,7 @@ header {
 .header-label:hover,
 .header-label:focus { /*todo:переопределяем bootstrap*/
   text-decoration: none;
+  color: #222222;
 }
 
 .header-label img,
@@ -143,7 +144,7 @@ header {
     display: none;
     position: absolute;
     width: 265px;
-    height: 443px;
+    //height: 443px;
     border-radius: 5px;
     background-color: #ffffff;
     left: -15px;
