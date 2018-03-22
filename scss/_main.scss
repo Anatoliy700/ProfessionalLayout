@@ -10,13 +10,14 @@ header {
   /*margin: 0 auto;*/
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
   border: 1px solid #ececec;
+  padding: 10px;
 }
 
 .header-content {
-  width: 1141px;
+  max-width: $widthBase;
   margin: 0 auto;
   min-height: 100px;
-  padding: 25px 0;
+  padding: 15px 0;
   display: flex;
   justify-content: flex-start;
   /*background-color: #a4a4a4;*/
@@ -308,16 +309,16 @@ header {
   }
 }
 
-.btn:hover {
-  background-color: #ad2739 !important;
+.acc > .btn:hover {
+  background-color: #ad2739;
 }
 
-.btn:active {
-  background-color: #f5013c !important;
+.acc > .btn:active {
+  background-color: #f5013c;
 }
 
 .wrap-nav {
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   /*min-height: 51px;*/
   /*background-color: #ffff11;*/
@@ -358,15 +359,20 @@ nav {
   color: #e00e0e;
 }
 
+.logo-subscribe {
+  display: none;
+}
+
 .subscribe {
   background: #f2f2f2 url("../image/subscribe-img.png") no-repeat center;
   height: 438px;
   box-sizing: border-box;
   margin-bottom: 109px;
+  padding: 0 10px;
 }
 
 .wrap-subscribe-content {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
   height: inherit;
   padding-top: 111px;
@@ -445,7 +451,7 @@ nav {
   align-self: flex-end;
 }
 
-.subscribe-content-right .subscribe-title {
+.subscribe-title {
   color: #222224;
   font-family: $fontFamily;
   font-size: 14px;
@@ -457,7 +463,7 @@ nav {
   margin-bottom: 35px;
 }
 
-.subscribe-content-right .subscribe-title span {
+.subscribe-title span {
   display: block;
   font-size: 24px;
   letter-spacing: 0.6px;
@@ -468,7 +474,7 @@ nav {
   display: flex;
 }
 
-.subscribe-content-right .subscribe-form input {
+.subscribe-form input {
   width: 282px;
   height: 46px;
   border-radius: 23px 0 0 23px;
@@ -507,11 +513,11 @@ footer {
 }
 
 .wrap-footer-content {
-  width: 1140px;
+  max-width: 1150px;
   margin: 0 auto 89px;
   display: flex;
   justify-content: space-between;
-  padding-right: 35px;
+  padding: 0 35px 0 10px;
   box-sizing: border-box;
 }
 
@@ -564,12 +570,13 @@ footer {
 }
 
 .wrap-copyright {
-  width: 1140px;
+  max-width: 1160px;
   height: inherit;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 10px;
 }
 
 .copyright-social {

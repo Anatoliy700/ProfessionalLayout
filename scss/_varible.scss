@@ -2,6 +2,10 @@ $fontFamily: "Arial", sans-serif;
 $bgColorBase: #f16d7f;
 $widthBase: 1141px;
 
+@mixin btn-hover() {
+  background-color: $bgColorBase;
+}
+
 @mixin btn-active() {
   box-shadow: 0 0 14px 2px rgba(116, 33, 202, 0.97);
   border-color: $bgColorBase;
@@ -30,7 +34,7 @@ $widthBase: 1141px;
   outline: none !important;
   cursor: pointer;
   &:hover {
-    background-color: $bgColorBase;
+   @include btn-hover;
     color: #fff;
   }
   &:active {
