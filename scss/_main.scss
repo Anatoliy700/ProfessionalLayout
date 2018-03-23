@@ -16,7 +16,7 @@ header {
 .header-content {
   max-width: $widthBase;
   margin: 0 auto;
-  min-height: 100px;
+  //min-height: 100px;
   padding: 15px 0;
   display: flex;
   justify-content: flex-start;
@@ -65,6 +65,10 @@ header {
 .header-search {
   display: flex;
   align-items: center;
+  .search__wrap{
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header-search select,
@@ -322,6 +326,10 @@ header {
   margin: 0 auto;
   /*min-height: 51px;*/
   /*background-color: #ffff11;*/
+  .nav-open-click,
+  .nav-open-check{
+    display: none;
+  }
 }
 
 .nav,
@@ -403,17 +411,18 @@ nav {
   padding-top: 8px;
 }
 
-.subscribe-content-left div:nth-child(1) {
+.subscribe-content-left > div:nth-child(1) {
   color: #222224;
   font-family: $fontFamily;
   font-size: 15px;
   font-style: italic;
   line-height: 26px;
   letter-spacing: 0.4px;
-  margin-bottom: 9px;
+  margin-bottom: 9px;;
+  max-width: 400px;
 }
 
-.subscribe-content-left div:nth-child(2) {
+.subscribe-content-left > div:nth-child(2) {
   font-family: $fontFamily;
   color: #222224;
   font-size: 12px;
@@ -490,6 +499,8 @@ nav {
   letter-spacing: 0.35px;
   padding-left: 28px;
   box-sizing: border-box;
+  flex-basis: 200px;
+  flex-grow: 1;
 }
 
 .subscribe-form button {
@@ -503,7 +514,7 @@ nav {
   font-family: $fontFamily;
   font-size: 14px;
   font-weight: 400;
-  line-height: 40px;
+  //line-height: 40px;
   letter-spacing: 0.35px;
 }
 
@@ -526,6 +537,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-right: 20px;
 }
 
 .footer-logo-copy div:nth-child(n+2) {
@@ -535,6 +547,15 @@ footer {
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.35px;
+}
+
+.footer-links__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 0 20px;
+  flex-basis: 55%;
 }
 
 .footer-links {
@@ -565,7 +586,7 @@ footer {
 }
 
 .copyright {
-  height: 79px;
+  //height: 79px;
   background-color: #e6e6e6;
 }
 
@@ -576,7 +597,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  padding: 10px;
 }
 
 .copyright-social {

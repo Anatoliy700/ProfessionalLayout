@@ -13,10 +13,13 @@
 .wrap-slider {
   max-width: $widthBase + 20px;
   margin: 0 auto;
-  &:after {
-    content: '';
-    display: block;
-    clear: both;
+  //&:after {
+  //  content: '';
+  //  display: block;
+  //  clear: both;
+  //}
+  .slider-content__left{
+    display: none;
   }
 }
 
@@ -58,17 +61,17 @@
     content: '';
     display: block;
     position: absolute;
-    width: 12px;
-    height: 92px;
+    width: 2.3%;
+    height: 100%;
     background-color: #f16d7f;
-    left: -24px;
+    left: -4%;
     //margin-right: 12px;
   }
 }
 
 .slider-text span {
   letter-spacing: 1px;
-  font-size: 37px;
+  font-size: .6em;
 }
 
 .slider-text span:nth-of-type(2) {

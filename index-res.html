@@ -10,18 +10,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header">
+<header class="header header_resp">
   <div class="header-content">
     <a href="#" class="header-label">
       <img src="image/group-2.png" alt="Logo">
       Bran<span>d</span>
     </a>
     <div class="header-search">
-      <select title="search" name="search" id="search">
-        <option class="nav" value="Browse">Browse</option>
-      </select>
-      <input type="text" placeholder="Search for item...">
-      <button></button>
+      <div class="search__wrap">
+        <select title="search" name="search" id="search">
+          <option class="nav" value="Browse">Browse</option>
+        </select>
+        <input type="text" placeholder="Search for item...">
+        <button></button>
+      </div>
     </div>
     <div class="acc">
       <div class="acc__cart_wrap">
@@ -84,13 +86,17 @@
           </div>
         </div>
       </div>
-      <select title="MyAccount" class="btn" name="account" id="account">
-        <option value="MyAccount">MyAccount</option>
-      </select>
+      <div class="my-account__wrap">
+        <select title="MyAccount" class="btn" name="account" id="account">
+          <option value="MyAccount">MyAccount</option>
+        </select>
+      </div>
     </div>
   </div>
 </header>
-<nav class="wrap-nav">
+<nav class="wrap-nav nav-resp">
+  <label for="navCheck" class="nav-open-click"></label>
+  <input type="checkbox" id="navCheck" class="nav-open-check">
   <ul class="nav">
     <li><a href="#">Home</a></li>
     <li><a href="#">Man</a></li>
@@ -103,8 +109,10 @@
 </nav>
 <div class="slider ">
   <div class="wrap-slider">
+    <div class="slider-content__left">
+      <img src="image/slider-left-img.jpg" alt="Slider image">
+    </div>
     <div class="slider-content">
-      <!--<div class="vertical-strip"></div>-->
       <div class="slider-text">
         THE BRAND <br>
         <span>OF LUXERIOUS</span> <span>FASHION</span>
@@ -300,10 +308,12 @@
 <div class="logo-subscribe">
   <div class="logo-subscribe__wrap">
     <div class="logo-subscribe__logo">
-      <img src="image/logo-subscribe-1.jpg" alt="Logo 1">
-      <img src="image/logo-subscribe-2.jpg" alt="Logo 2">
-      <img src="image/logo-subscribe-3.jpg" alt="Logo 3">
-      <img src="image/logo-subscribe-4.jpg" alt="Logo 4">
+      <div class="logo__wrap">
+        <img src="image/logo-subscribe-1.jpg" alt="Logo 1">
+        <img src="image/logo-subscribe-2.jpg" alt="Logo 2">
+        <img src="image/logo-subscribe-3.jpg" alt="Logo 3">
+        <img src="image/logo-subscribe-4.jpg" alt="Logo 4">
+      </div>
     </div>
     <div class="logo-subscribe__subscribe">
       <div class="subscribe__wrap">
@@ -324,16 +334,17 @@
     <div class="subscribe-content">
       <div class="subscribe-content-left">
         <div>
-          “Vestibulum quis porttitor dui! Quisque viverra nunc mi, <br>
-          a pulvinar purus condimentum a. Aliquam condimentum <br>
-          mattis neque sed pretium”
+          “Vestibulum quis porttitor dui! Quisque viverra nunc mi,<br> a pulvinar purus condimentum a. Aliquam
+          condimentum mattis neque sed pretium”
         </div>
         <div>
           <span>Bin Burhan</span>
           Dhaka, Bd
         </div>
-        <div class="rectangle-1"></div>
-        <div class="rectangle-2"></div>
+        <div class="rectangle__wrap">
+          <div class="rectangle-1"></div>
+          <div class="rectangle-2"></div>
+        </div>
       </div>
       <div class="subscribe-content-right">
         <div class="subscribe-title">
@@ -366,55 +377,58 @@
         Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
       </div>
     </div>
-    <div class="footer-company footer-links">
-      <div>COMPANY</div>
-      <a href="#">Home</a>
-      <a href="#">Shop</a>
-      <a href="#">About</a>
-      <a href="#">How it Works</a>
-      <a href="#">Contact</a>
-    </div>
-    <div class="footer-information footer-links">
-      <div>INFORMATION</div>
-      <a href="#">Tearms & Condition</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">How to Buy</a>
-      <a href="#">How to Sell</a>
-      <a href="#">Promotion</a>
-    </div>
-    <div class="footer-shop-category footer-links">
-      <div>SHOP CATEGORY</div>
-      <a href="#">Men</a>
-      <a href="#">Women</a>
-      <a href="#">Child</a>
-      <a href="#">Apparel</a>
-      <a href="#">Brows All</a>
-    </div>
-  </div>
-  <div class="copyright">
-    <div class="wrap-copyright">
-      <div class="copyright-text">
-        &copy; 2017 Brand All Rights Reserved.
+    <div class="footer-links__wrap">
+      <div class="footer-company footer-links">
+        <div>COMPANY</div>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">How it Works</a>
+        <a href="#">Contact</a>
       </div>
-      <div class="copyright-social">
-        <a href="#">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-        <a href="#">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-        <a href="#">
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <a href="#">
-          <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-        </a>
-        <a href="#">
-          <i class="fa fa-google-plus" aria-hidden="true"></i>
-        </a>
+      <div class="footer-information footer-links">
+        <div>INFORMATION</div>
+        <a href="#">Tearms & Condition</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">How to Buy</a>
+        <a href="#">How to Sell</a>
+        <a href="#">Promotion</a>
+      </div>
+      <div class="footer-shop-category footer-links">
+        <div>SHOP CATEGORY</div>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Child</a>
+        <a href="#">Apparel</a>
+        <a href="#">Brows All</a>
       </div>
     </div>
   </div>
+</div>
+<div class="copyright">
+  <div class="wrap-copyright">
+    <div class="copyright-text">
+      &copy; 2017 Brand All Rights Reserved.
+    </div>
+    <div class="copyright-social">
+      <a href="#">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-google-plus" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</div>
 </div>
 </body>
 </html>
