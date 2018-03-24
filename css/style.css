@@ -4,8 +4,6 @@ body {
 
 .header,
 header {
-  /*width: 1600px;*/
-  /*margin: 0 auto;*/
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
   border: 1px solid #ececec;
   padding: 10px; }
@@ -669,6 +667,8 @@ main {
   /*background: url("../image/for-men.png") no-repeat;*/
   position: relative;
   margin: 0 13px 13px 0; }
+  .category-item:hover {
+    filter: brightness(0.6); }
 
 .category-text {
   display: inline-block;
@@ -2041,7 +2041,8 @@ main.content {
       height: 260px;
       overflow: hidden;
       text-align: center;
-      flex-grow: 1; }
+      flex-grow: 1;
+      filter: brightness(1); }
       .category .category-item.accesories {
         flex-basis: 100%;
         height: initial; }
@@ -2076,7 +2077,7 @@ main.content {
           opacity: .3;
           margin: 0 auto; }
       .category .category-item:hover img {
-        filter: brightness(0.2); }
+        filter: brightness(1); }
 
   .product-item {
     flex-basis: 350px; }

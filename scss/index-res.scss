@@ -9,6 +9,7 @@
       overflow: hidden;
       text-align: center;
       flex-grow: 1;
+      filter: brightness(1);
       &.accesories {
         flex-basis: 100%;
         height: initial;
@@ -50,7 +51,7 @@
         }
       }
       &:hover img{
-        filter: brightness(0.2);
+        filter: brightness(1);
       }
     }
   }

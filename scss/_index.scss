@@ -104,6 +104,9 @@ main {
   /*background: url("../image/for-men.png") no-repeat;*/
   position: relative;
   margin: 0 13px 13px 0;
+  &:hover {
+    filter: brightness(0.6);
+  }
 }
 
 .category-text {
