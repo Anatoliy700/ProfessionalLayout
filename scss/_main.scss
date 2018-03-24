@@ -313,11 +313,11 @@ header {
   }
 }
 
-.acc > .btn:hover {
+.acc  .btn:hover {
   background-color: #ad2739;
 }
 
-.acc > .btn:active {
+.acc  .btn:active {
   background-color: #f5013c;
 }
 
@@ -516,6 +516,20 @@ nav {
   font-weight: 400;
   //line-height: 40px;
   letter-spacing: 0.35px;
+  //outline: none !important;
+  &:focus{
+    box-shadow: none;
+  }
+  &:hover{
+    background-color: #fff;
+    color: $bgColorBase;
+    border: 1px solid $bgColorBase;
+  }
+  &:active{
+    background-color: $bgColorBase;
+    color: #fff;
+    @include btn-active;
+  }
 }
 
 .footer,
@@ -561,7 +575,8 @@ footer {
 .footer-links {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;;
+  align-items: flex-start;
 }
 
 .footer-links div {
@@ -583,6 +598,10 @@ footer {
   font-weight: 400;
   letter-spacing: 0.4px;
   line-height: 42px;
+  &:hover{
+    color: $bgColorBase;
+    transform: scale(1.2);
+  }
 }
 
 .copyright {
@@ -620,7 +639,7 @@ footer {
 }
 
 .copyright-social a:hover {
-  background-color: #b50000;
+  background-color: $bgColorBase;
   color: #ffffff;
 }
 
